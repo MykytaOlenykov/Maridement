@@ -1,1 +1,2 @@
-import './mobile-menu.js';
+import "./mobileMenu.js";
+import "./btnAnimation.js";
