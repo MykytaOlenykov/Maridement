@@ -31,12 +31,40 @@
       left: 0;
 
       display: block;
-      width: 5;
+      width: 5px;
       height: 220px;
 
       background-color: var(--secondary-color);
       border-radius: 25px;
     }
+  }
+
+  &__big-box {
+    position: absolute;
+    z-index: -1;
+    top: -38px;
+    left: 22px;
+
+    display: inline-flex;
+    gap: 14px;
+  }
+
+  &__big-icon {
+    fill: var(--secondary-bg-color);
+  }
+
+  &__small-box {
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+    right: 0;
+
+    display: inline-flex;
+    gap: 8px;
+  }
+
+  &__small-icon {
+    fill: var(--secondary-color);
   }
 
   &__text {
@@ -48,6 +76,10 @@
     line-height: 1.2;
     letter-spacing: 0.04em;
     color: var(--primary-card-color);
+
+    @media screen and (max-width: calc($mobile - 35px)) {
+      font-size: 18px;
+    }
   }
 }
 
