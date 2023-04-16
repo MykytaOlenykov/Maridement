@@ -1,6 +1,6 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<symbol id="arrow-small" viewBox="0 0 144 32">
+<symbol id="arrow" viewBox="0 0 144 32">
 <path d="M3.653 14.631c-1.105 0-2 0.895-2 2s0.895 2 2 2v-4zM143.254 18.046c0.781-0.781 0.781-2.047 0-2.828l-12.728-12.728c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l11.314 11.314-11.314 11.314c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l12.728-12.728zM3.653 18.631h138.187v-4h-138.187v4z"></path>
 </symbol>
 <symbol id="close" viewBox="0 0 32 32">

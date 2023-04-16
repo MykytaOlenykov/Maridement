@@ -560,4 +560,54 @@ body {
 }
 .list-facts__item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.feature-section {
+  padding-top: 32px;
+  padding-bottom: 45px;
+}
+.feature-section__section-title {
+  margin-bottom: 40px;
+}
+.feature-section__section-title > span {
+  position: relative;
+}
+.feature-section__icon {
+  position: absolute;
+  z-index: -1;
+  top: -3px;
+  left: 4px;
+  fill: var(--secondary-color);
+}
+.feature-section__title {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.feature-section__list {
+  padding-left: 16px;
+}
+.feature-section__list:not(:last-child) {
+  margin-bottom: 56px;
+}
+.feature-section__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.feature-section__text {
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+}
+.feature-section__text::before {
+  position: absolute;
+  top: 8px;
+  left: -16px;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */
