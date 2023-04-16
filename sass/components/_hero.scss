@@ -1,0 +1,41 @@
+.hero-section {
+  &__container {
+    padding-top: 313.5px;
+    padding-bottom: 112px;
+
+    background-image: linear-gradient(
+        17.3deg,
+        rgba(0, 0, 0, 0.81) 9.66%,
+        rgba(0, 0, 0, 0) 55.73%
+      ),
+      url("../images/hero/hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          17.3deg,
+          rgba(0, 0, 0, 0.81) 9.66%,
+          rgba(0, 0, 0, 0) 55.73%
+        ),
+        url("../images/hero/hero@2x.png");
+    }
+  }
+
+  &__title {
+    margin-bottom: 5px;
+
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 1.24;
+  }
+
+  &__descr {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

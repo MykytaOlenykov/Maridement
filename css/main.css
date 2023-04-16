@@ -1,7 +1,10 @@
 :root {
   --primary-color: #ffffff;
+  --secondary-color: #ffdd2c;
   --primary-bg-color: #111217;
   --secondary-bg-color: #25262e;
+  --btn-content-color: #160e01;
+  --primary-gradient: linear-gradient(269.41deg, #ffda1b 0.28%, #ffde2e 99.72%);
   --duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -318,6 +321,10 @@ body {
 }
 
 .logo {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.24;
+  letter-spacing: 0.04em;
   color: var(--primary-color);
   text-decoration: none;
 }
@@ -368,6 +375,89 @@ body {
   transform: translate(-50%, -50%);
 }
 .site-nav__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-transform: uppercase;
   color: var(--primary-color);
   text-decoration: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--btn-content-color);
+  text-decoration: none;
+  background-image: var(--primary-gradient);
+  border-radius: 89px;
+}
+.button__icon {
+  margin-left: auto;
+  fill: currentColor;
+}
+
+.hero-section__container {
+  padding-top: 313.5px;
+  padding-bottom: 112px;
+  background-image: linear-gradient(17.3deg, rgba(0, 0, 0, 0.81) 9.66%, rgba(0, 0, 0, 0) 55.73%), url("../images/hero/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section__container {
+    background-image: linear-gradient(17.3deg, rgba(0, 0, 0, 0.81) 9.66%, rgba(0, 0, 0, 0) 55.73%), url("../images/hero/hero@2x.png");
+  }
+}
+.hero-section__title {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.24;
+}
+.hero-section__descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.info-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.info-section__title {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.21;
+}
+
+.info-list {
+  margin-bottom: 50px;
+  padding-left: 16px;
+}
+.info-list__item:not(:last-child) {
+  margin-bottom: 18px;
+}
+.info-list__text {
+  position: relative;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.21;
+}
+.info-list__text::before {
+  position: absolute;
+  top: 8px;
+  left: -16px;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

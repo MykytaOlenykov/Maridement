@@ -10,6 +10,10 @@
 }
 
 .logo {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.24;
+  letter-spacing: 0.04em;
   color: var(--primary-color);
   text-decoration: none;
 }
@@ -73,6 +77,10 @@
   }
 
   &__link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    text-transform: uppercase;
     color: var(--primary-color);
     text-decoration: none;
   }

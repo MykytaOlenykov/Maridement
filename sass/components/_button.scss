@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--btn-content-color);
+  text-decoration: none;
+
+  background-image: var(--primary-gradient);
+  border-radius: 89px;
+
+  &__icon {
+    margin-left: auto;
+
+    fill: currentColor;
+  }
+}

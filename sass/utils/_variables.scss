@@ -1,8 +1,13 @@
 :root {
   --primary-color: #ffffff;
+  --secondary-color: #ffdd2c;
 
   --primary-bg-color: #111217;
   --secondary-bg-color: #25262e;
+
+  --btn-content-color: #160e01;
+
+  --primary-gradient: linear-gradient(269.41deg, #ffda1b 0.28%, #ffde2e 99.72%);
 
   --duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);

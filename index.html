@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maridement</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <style>
+      .button__icon {
+        width: 69px;
+        height: 24px;
+      }
+    </style>
   </head>
   <body>
     <header class="page-header">
@@ -61,32 +67,54 @@
     </header>
 
     <main>
-      <section>
-        <h1>Марія Дементєєва</h1>
+      <section class="hero-section">
+        <div class="container hero-section__container">
+          <h1 class="hero-section__title">Марія Дементєєва</h1>
 
-        <p>
-          Авторський курс з фотопозування Модельний скаут
-          <span>|</span> agemodel
-        </p>
+          <p class="hero-section__descr">
+            Авторський курс з фотопозування<br />
+            Модельний скаут | agemodel
+          </p>
+        </div>
       </section>
 
-      <section>
-        <h2>Секрети та інформація для вас, якщо:</h2>
+      <section class="info-section">
+        <div class="container">
+          <h2 class="info-section__title">
+            Секрети та інформація для вас, якщо:
+          </h2>
 
-        <ul>
-          <li>Ви мрієте заробляти на своїй красі?</li>
-          <li>Сумніваєтеся, що можливо стати моделлю після 30?</li>
-          <li>Хочете вміти робити гарні фотографії для себе?</li>
-          <li>Не знаєте як стати, куди подіти руки чи ноги на фото?</li>
-          <li>Ви Боїтеся, що не гідні?</li>
-        </ul>
+          <ul class="info-list">
+            <li class="info-list__item">
+              <p class="info-list__text">Ви мрієте заробляти на своїй красі?</p>
+            </li>
+            <li class="info-list__item">
+              <p class="info-list__text">
+                Сумніваєтеся, що можливо стати моделлю після 30?
+              </p>
+            </li>
+            <li class="info-list__item">
+              <p class="info-list__text">
+                Хочете вміти робити гарні фотографії для себе?
+              </p>
+            </li>
+            <li class="info-list__item">
+              <p class="info-list__text">
+                Не знаєте як стати, куди подіти руки чи ноги на фото?
+              </p>
+            </li>
+            <li class="info-list__item">
+              <p class="info-list__text">Ви Боїтеся, що не гідні?</p>
+            </li>
+          </ul>
 
-        <a href="#">
-          Детальніше про курс
-          <svg>
-            <use href="./images/icons.svg#arrow-small"></use>
-          </svg>
-        </a>
+          <a class="button" href="#">
+            Детальніше про курс
+            <svg class="button__icon">
+              <use href="./images/icons.svg#arrow-small"></use>
+            </svg>
+          </a>
+        </div>
       </section>
     </main>
 
