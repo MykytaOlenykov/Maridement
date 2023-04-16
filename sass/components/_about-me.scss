@@ -1,0 +1,80 @@
+.about-me-section {
+  padding-top: 35px;
+  padding-bottom: 32px;
+
+  &__section-title {
+    margin-bottom: 21px;
+
+    & > span {
+      position: relative;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: -14px;
+    right: -22.5px;
+
+    width: 31px;
+    height: 42px;
+
+    fill: var(--secondary-color);
+  }
+
+  &__thumb {
+    margin-bottom: 38px;
+
+    max-width: 335px;
+    height: auto;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    & > span {
+      position: relative;
+
+      display: inline-block;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        bottom: -16px;
+
+        display: block;
+        width: 100%;
+        height: 1px;
+
+        background-color: var(--primary-color);
+      }
+    }
+  }
+}
+
+.list-facts {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}

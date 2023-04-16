@@ -5,6 +5,11 @@
   --secondary-bg-color: #25262e;
   --btn-content-color: #160e01;
   --primary-gradient: linear-gradient(269.41deg, #ffda1b 0.28%, #ffde2e 99.72%);
+  --secondary-gradient: linear-gradient(
+    269.41deg,
+    #ffc600 0.28%,
+    #ffd644 99.72%
+  );
   --duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -310,6 +315,15 @@ body {
   max-width: 375px;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .page-header {
   position: relative;
   padding-top: 14px;
@@ -356,10 +370,12 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: var(--secondary-bg-color);
+  visibility: hidden;
   transform: translateY(-100%);
-  transition: transform var(--duration) var(--timing-function);
+  transition: visibility var(--duration), transform var(--duration) var(--timing-function);
 }
 .menu-container--is-open {
+  visibility: visible;
   transform: translateY(0);
 }
 
@@ -384,6 +400,8 @@ body {
 }
 
 .button {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -395,6 +413,23 @@ body {
   text-decoration: none;
   background-image: var(--primary-gradient);
   border-radius: 89px;
+  overflow: hidden;
+}
+.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: var(--secondary-gradient);
+  opacity: 0;
+  transition: opacity var(--duration) var(--timing-function);
+}
+.button:hover::after, .button:focus::after {
+  opacity: 1;
 }
 .button__icon {
   margin-left: auto;
@@ -460,4 +495,69 @@ body {
   height: 6px;
   background-color: var(--secondary-color);
   border-radius: 50%;
+}
+
+.about-me-section {
+  padding-top: 35px;
+  padding-bottom: 32px;
+}
+.about-me-section__section-title {
+  margin-bottom: 21px;
+}
+.about-me-section__section-title > span {
+  position: relative;
+}
+.about-me-section__icon {
+  position: absolute;
+  top: -14px;
+  right: -22.5px;
+  width: 31px;
+  height: 42px;
+  fill: var(--secondary-color);
+}
+.about-me-section__thumb {
+  margin-bottom: 38px;
+  max-width: 335px;
+  height: auto;
+}
+.about-me-section__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.about-me-section__title {
+  margin-bottom: 34px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.about-me-section__title > span {
+  position: relative;
+  display: inline-block;
+}
+.about-me-section__title > span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--primary-color);
+}
+
+.list-facts {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+}
+.list-facts__item:not(:last-child) {
+  margin-bottom: 16px;
 }/*# sourceMappingURL=main.css.map */

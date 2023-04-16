@@ -46,17 +46,18 @@
   left: 0;
   z-index: 100;
 
-  // display: none;
   width: 100vw;
   height: 100vh;
 
   background-color: var(--secondary-bg-color);
 
+  visibility: hidden;
   transform: translateY(-100%);
-  transition: transform var(--duration) var(--timing-function);
+  transition: visibility var(--duration),
+    transform var(--duration) var(--timing-function);
 
   &--is-open {
-    // display: block;
+    visibility: visible;
     transform: translateY(0);
   }
 }
