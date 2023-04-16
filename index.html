@@ -145,7 +145,29 @@
           </h2>
 
           <div class="about-me-section__thumb">
-            <img
+            <picture>
+              <source
+                srcset="
+                  ./images/about-me/mobile/img.webp    1x,
+                  ./images/about-me/mobile/img@2x.webp 2x
+                "
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/about-me/mobile/img.jpg    1x,
+                  ./images/about-me/mobile/img@2x.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                class="about-me-section__img"
+                src="./images/about-me/mobile/img.jpg"
+                loading="lazy"
+                alt="Фото з фотосесії у Парижі"
+              />
+            </picture>
+            <!-- <img
               class="about-me-section__img"
               srcset="
                 ./images/about-me/mobile/img.png    1x,
@@ -154,7 +176,7 @@
               src="./images/about-me/mobile/img.png"
               loading="lazy"
               alt="Фото з фотосесії у Парижі"
-            />
+            /> -->
           </div>
 
           <h3 class="about-me-section__title">
