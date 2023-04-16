@@ -5,8 +5,8 @@
   --secondary-bg-color: #21232e;
   --menu-bg-color: #25262e;
   --btn-content-color: #160e01;
-  --primary-card-color: #f4f4f4;
-  --secondary-card-color: #b5b5b5;
+  --primary-text-color: #f4f4f4;
+  --secondary-text-color: #b5b5b5;
   --number-card-color: #111217;
   --primary-gradient: linear-gradient(269.41deg, #ffda1b 0.28%, #ffde2e 99.72%);
   --secondary-gradient: linear-gradient(
@@ -577,45 +577,45 @@ body {
   text-align: center;
 }
 
-.feature-section {
+.about-course-section {
   padding-top: 32px;
   padding-bottom: 45px;
 }
-.feature-section__section-title {
+.about-course-section__section-title {
   margin-bottom: 40px;
 }
-.feature-section__section-title > span {
+.about-course-section__section-title > span {
   position: relative;
 }
-.feature-section__icon {
+.about-course-section__icon {
   position: absolute;
   z-index: -1;
   top: -3px;
   left: 4px;
   fill: var(--secondary-color);
 }
-.feature-section__title {
+.about-course-section__title {
   margin-bottom: 12px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
 }
-.feature-section__list {
+.about-course-section__list {
   padding-left: 16px;
 }
-.feature-section__list:not(:last-child) {
+.about-course-section__list:not(:last-child) {
   margin-bottom: 56px;
 }
-.feature-section__item:not(:last-child) {
+.about-course-section__item:not(:last-child) {
   margin-bottom: 16px;
 }
-.feature-section__text {
+.about-course-section__text {
   position: relative;
   font-weight: 600;
   font-size: 14px;
   line-height: 1;
 }
-.feature-section__text::before {
+.about-course-section__text::before {
   position: absolute;
   top: 8px;
   left: -16px;
@@ -633,6 +633,7 @@ body {
 }
 .tariffs-section__section-title {
   margin-bottom: 60px;
+  color: var(--primary-text-color);
 }
 .tariffs-section__section-title > span {
   position: relative;
@@ -688,7 +689,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.04em;
-  color: var(--primary-card-color);
+  color: var(--primary-text-color);
 }
 @media screen and (max-width: 340px) {
   .tariffs-section__text {
@@ -756,7 +757,7 @@ body {
   font-size: 15px;
   line-height: 1.2;
   letter-spacing: 0.04em;
-  color: var(--secondary-card-color);
+  color: var(--secondary-text-color);
 }
 
 .tariffs-feature-list {
@@ -780,5 +781,45 @@ body {
   font-size: 17px;
   line-height: 1.24;
   letter-spacing: 0.04em;
-  color: var(--primary-card-color);
+  color: var(--primary-text-color);
+}
+
+.feedback-section {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.feature-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.feature-section__section-title {
+  margin-bottom: 40px;
+  color: var(--primary-text-color);
+}
+.feature-section__list {
+  margin-bottom: 60px;
+}
+.feature-section__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.feature-section__title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.23;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--secondary-color);
+}
+.feature-section__descr {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+.feature-section .button--secondary {
+  font-size: 17px;
+  line-height: 1.24;
 }/*# sourceMappingURL=main.css.map */
