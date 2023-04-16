@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maridement</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container page-header__container">
+        <a class="logo" href="./index.html">Maridement</a>
+
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu-btn__icon"
+            aria-label="Кнопка виклику мобільного меню"
+            width="24"
+            height="14"
+          >
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container">
+          <button class="menu-btn menu-btn--close js-close-menu" type="button">
+            <svg
+              class="menu-btn__icon"
+              aria-label="Кнопка закриття мобільного меню"
+              width="20"
+              height="20"
+            >
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li>
+                <a class="site-nav__link" href="#">Послуги</a>
+              </li>
+              <li>
+                <a class="site-nav__link" href="#">Відгуки</a>
+              </li>
+              <li>
+                <a class="site-nav__link" href="#">Які результати</a>
+              </li>
+              <li>
+                <a class="site-nav__link" href="#">Хто я</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>Марія Дементєєва</h1>
+
+        <p>
+          Авторський курс з фотопозування Модельний скаут
+          <span>|</span> agemodel
+        </p>
+      </section>
+
+      <section>
+        <h2>Секрети та інформація для вас, якщо:</h2>
+
+        <ul>
+          <li>Ви мрієте заробляти на своїй красі?</li>
+          <li>Сумніваєтеся, що можливо стати моделлю після 30?</li>
+          <li>Хочете вміти робити гарні фотографії для себе?</li>
+          <li>Не знаєте як стати, куди подіти руки чи ноги на фото?</li>
+          <li>Ви Боїтеся, що не гідні?</li>
+        </ul>
+
+        <a href="#">
+          Детальніше про курс
+          <svg>
+            <use href="./images/icons.svg#arrow-small"></use>
+          </svg>
+        </a>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
