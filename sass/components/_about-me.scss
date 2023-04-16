@@ -69,12 +69,14 @@
 }
 
 .list-facts {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  text-align: center;
-
   &__item:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
   }
 }
