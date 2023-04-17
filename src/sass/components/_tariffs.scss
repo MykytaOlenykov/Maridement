@@ -8,6 +8,8 @@
   }
 
   &__section-title {
+    position: relative;
+
     margin-bottom: 60px;
 
     color: var(--primary-text-color);
@@ -40,7 +42,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
 
       position: absolute;
       top: -38px;
@@ -131,7 +133,7 @@
       width: 337px;
       height: 408px;
 
-      background-image: url("../images/tariffs/img.png");
+      background-image: url('../images/tariffs/img.png');
       background-repeat: no-repeat;
       background-position: right center;
       background-size: contain;
@@ -141,7 +143,7 @@
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url("../images/tariffs/img@2x.png");
+        background-image: url('../images/tariffs/img@2x.png');
       }
     }
   }

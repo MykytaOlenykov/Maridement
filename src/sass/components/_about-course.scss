@@ -36,6 +36,10 @@
     font-size: 20px;
     line-height: 1.2;
 
+    &--with-anchor {
+      position: relative;
+    }
+
     @media screen and (min-width: $tablet) {
       margin-bottom: 20px;
 
@@ -74,7 +78,7 @@
       top: 8px;
       left: -16px;
 
-      content: "";
+      content: '';
 
       display: inline-block;
       width: 6px;

@@ -6,10 +6,11 @@ document.addEventListener(
   'scroll',
   debounce(
     () => {
-      console.log(1);
       if (window.scrollY >= 1) {
-        header.classList.add('page-header--fixed');
-        document.body.style.paddingTop = `${header.clientHeight}px`;
+        if (!header.classList.contains('page-header--fixed')) {
+          header.classList.add('page-header--fixed');
+          document.body.style.paddingTop = `${header.clientHeight}px`;
+        }
       } else {
         header.classList.remove('page-header--fixed');
         document.body.style.paddingTop = 0;
@@ -19,3 +20,11 @@ document.addEventListener(
     { leading: true }
   )
 );
+
+window.addEventListener('orientationchange', () => {
+  setTimeout(() => {
+    if (header.classList.contains('page-header--fixed')) {
+      document.body.style.paddingTop = `${header.clientHeight}px`;
+    }
+  }, 100);
+});

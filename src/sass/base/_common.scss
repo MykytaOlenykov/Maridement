@@ -22,7 +22,7 @@ img {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: var(--primary-color);
 
   background-color: var(--primary-bg-color);
@@ -58,4 +58,10 @@ body {
   //   font-size: 45px;
   //   letter-spacing: 0.04em;
   // }
+}
+
+.anchor {
+  position: absolute;
+  top: -100px;
+  left: 0;
 }
