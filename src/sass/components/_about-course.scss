@@ -3,6 +3,8 @@
   padding-bottom: 45px;
 
   &__section-title {
+    position: relative;
+
     margin-bottom: 40px;
 
     @media screen and (min-width: $tablet) {
