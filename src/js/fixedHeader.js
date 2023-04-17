@@ -17,7 +17,7 @@ document.addEventListener(
       }
     },
     300,
-    { leading: true }
+    { leading: true, trailing: false }
   )
 );
 
