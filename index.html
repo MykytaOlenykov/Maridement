@@ -52,6 +52,10 @@
           width: 23px;
           height: 48px;
         }
+        .feedback-section__icon {
+          width: 75px;
+          height: 60px;
+        }
       }
     </style>
   </head>
@@ -680,20 +684,36 @@
               учениці з просуванням, зйомками та кастингами, для її професійного
               розвитку
             </p>
+
+            <div class="tariffs-section__thumb"></div>
           </div>
         </div>
       </section>
 
       <section class="feedback-section">
         <div class="container">
-          <h2 class="section-title">Відгуки учениць</h2>
+          <h2 class="section-title feedback-section__section-title">
+            <span
+              >Відгуки учениць
+              <svg class="feedback-section__icon">
+                <use href="./images/icons.svg#love"></use>
+              </svg>
+            </span>
+          </h2>
         </div>
       </section>
 
       <section class="feature-section">
         <div class="container">
           <h2 class="section-title feature-section__section-title">
-            Що я пропоную?
+            <span>
+              Що я пропоную?
+              <img
+                class="feature-section__icon"
+                src="./images/crown.svg"
+                alt="Значок"
+              />
+            </span>
           </h2>
 
           <ul class="feature-section__list">
@@ -723,7 +743,9 @@
             </li>
           </ul>
 
-          <a class="button button--secondary js-btn-active" href="#"
+          <a
+            class="button button--secondary button--hidden js-btn-active"
+            href="#"
             >Записатися на курс</a
           >
         </div>

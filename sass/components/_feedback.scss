@@ -1,4 +1,24 @@
 .feedback-section {
   padding-top: 95px;
   padding-bottom: 95px;
+
+  &__section-title {
+    & > span {
+      position: relative;
+    }
+  }
+
+  &__icon {
+    display: none;
+
+    position: absolute;
+    top: -38px;
+    right: -32px;
+
+    fill: var(--secondary-color);
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
 }

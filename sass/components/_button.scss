@@ -44,6 +44,12 @@
     }
   }
 
+  &--hidden {
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
   &::after {
     position: absolute;
     top: 0;

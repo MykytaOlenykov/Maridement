@@ -6,14 +6,42 @@
     margin-bottom: 40px;
 
     color: var(--primary-text-color);
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 50px;
+    }
+
+    & > span {
+      position: relative;
+    }
+  }
+
+  &__icon {
+    display: none;
+
+    position: absolute;
+    top: -32px;
+    right: -36px;
+
+    width: 51px;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
   }
 
   &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
     margin-bottom: 60px;
-  }
 
-  &__item:not(:last-child) {
-    margin-bottom: 40px;
+    @media screen and (min-width: $tablet) {
+      gap: 50;
+      // justify-content: space-between;
+      flex-wrap: nowrap;
+      margin-bottom: 0;
+    }
   }
 
   &__title {
@@ -25,6 +53,12 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--secondary-color);
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 10px;
+
+      text-align: start;
+    }
   }
 
   &__descr {
@@ -33,6 +67,10 @@
     line-height: 1.21;
     text-align: center;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: $tablet) {
+      text-align: start;
+    }
   }
 
   & .button--secondary {
