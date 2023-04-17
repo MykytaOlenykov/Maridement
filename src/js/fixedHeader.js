@@ -1,14 +1,8 @@
-import debounce from 'lodash.debounce';
-
 const header = document.querySelector('.js-header');
 
-document.addEventListener(
-  'scroll',
-  debounce(onToggleFixeHeader, 300, { leading: true, trailing: true })
-);
+document.addEventListener('scroll', onToggleFixedHeader);
 
-function onToggleFixeHeader() {
-  console.log(1);
+function onToggleFixedHeader() {
   if (window.scrollY >= 1) {
     if (!header.classList.contains('page-header--fixed')) {
       header.classList.add('page-header--fixed');
