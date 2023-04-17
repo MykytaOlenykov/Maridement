@@ -15,10 +15,10 @@
     @media screen and (min-width: $tablet) {
       margin-bottom: 55px;
     }
+  }
 
-    & > span {
-      position: relative;
-    }
+  &__text {
+    position: relative;
   }
 
   &__icon {

@@ -13,10 +13,10 @@
     margin-bottom: 60px;
 
     color: var(--primary-text-color);
+  }
 
-    & > span {
-      position: relative;
-    }
+  &__text {
+    position: relative;
   }
 
   &__icon {
@@ -100,7 +100,7 @@
     fill: var(--secondary-color);
   }
 
-  &__text {
+  &__descr {
     margin-left: auto;
     max-width: 290px;
 
