@@ -171,10 +171,6 @@
   background-color: var(--secondary-bg-color);
   border-radius: 5px;
 
-  &--without-descr > &__price {
-    margin-bottom: 30px;
-  }
-
   &__number {
     position: absolute;
     top: 30px;
@@ -202,29 +198,6 @@
     font-size: 22px;
     line-height: 1.23;
     letter-spacing: 0.04em;
-  }
-
-  &__price {
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 1.24;
-    letter-spacing: 0.04em;
-
-    & > span {
-      color: var(--secondary-color);
-    }
-  }
-
-  &__descr {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 20px;
-
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
-    color: var(--secondary-text-color);
   }
 }
 
