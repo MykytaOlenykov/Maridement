@@ -1,7 +1,9 @@
+import throttle from 'lodash.throttle';
+
 const header = document.querySelector('.js-header');
 const body = document.body;
 
-document.addEventListener('scroll', onToggleFixedHeader);
+document.addEventListener('scroll', throttle(onToggleFixedHeader, 500));
 
 function onToggleFixedHeader() {
   if (window.scrollY >= 1) {
