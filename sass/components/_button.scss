@@ -38,6 +38,9 @@
       display: inline-flex;
 
       min-width: 417px;
+
+      font-size: 22px;
+      line-height: 1.23;
     }
   }
 
@@ -89,8 +92,22 @@
 
     fill: currentColor;
 
+    &--big {
+      display: none;
+    }
+
     @media screen and (max-width: calc($mobile - 15px)) {
       margin-left: 10px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      &--small {
+        display: none;
+      }
+
+      &--big {
+        display: block;
+      }
     }
   }
 }
