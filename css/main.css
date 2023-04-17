@@ -867,6 +867,12 @@ body {
   padding-top: 45px;
   padding-bottom: 45px;
 }
+@media screen and (min-width: 1024px) {
+  .tariffs-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 .tariffs-section__section-title {
   margin-bottom: 60px;
   color: var(--primary-text-color);

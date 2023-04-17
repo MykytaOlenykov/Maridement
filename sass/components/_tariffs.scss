@@ -2,6 +2,11 @@
   padding-top: 45px;
   padding-bottom: 45px;
 
+  @media screen and (min-width: $tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   &__section-title {
     margin-bottom: 60px;
 
