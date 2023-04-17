@@ -1,5 +1,4 @@
 import throttle from 'lodash.throttle';
-import debounce from 'lodash.debounce';
 
 const header = document.querySelector('.js-header');
 const body = document.body;
