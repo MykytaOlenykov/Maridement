@@ -7,19 +7,19 @@ closeMenuBtn.addEventListener("click", onCloseMenu);
 function onOpenMenu() {
   openMenuBtn.setAttribute("aria-expanded", true);
   mobileMenu.classList.add("menu-container--is-open");
-  bodyScrollLock.disableBodyScroll(document.body);
+  document.body.style.overflowY = "hidden";
 }
 
 function onCloseMenu() {
   openMenuBtn.setAttribute("aria-expanded", false);
   mobileMenu.classList.remove("menu-container--is-open");
-  bodyScrollLock.enableBodyScroll(document.body);
+  document.body.style.overflowY = "scroll";
 }
 
-// window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
-//   if (!e.matches) return;
+window.matchMedia("(min-width: 1024px)").addEventListener("change", (e) => {
+  if (!e.matches) return;
 
-//   mobileMenu.classList.remove("is-open");
-//   openMenuBtn.setAttribute("aria-expanded", false);
-//   bodyScrollLock.enableBodyScroll(document.body);
-// });
+  mobileMenu.classList.remove("menu-container--is-open");
+  openMenuBtn.setAttribute("aria-expanded", false);
+  document.body.style.overflowY = "scroll";
+});

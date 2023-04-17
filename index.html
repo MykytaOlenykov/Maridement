@@ -60,7 +60,7 @@
     </style>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header js-header">
       <div class="container page-header__container">
         <a class="logo" href="./index.html">Maridement</a>
 
@@ -92,19 +92,19 @@
             </svg>
           </button>
 
-          <nav class="site-nav">
+          <nav class="site-nav js-nav">
             <ul class="site-nav__list">
               <li>
-                <a class="site-nav__link" href="#">Послуги</a>
+                <a class="site-nav__link" href="#tariffs">Послуги</a>
               </li>
               <li>
-                <a class="site-nav__link" href="#">Відгуки</a>
+                <a class="site-nav__link" href="#feedback">Відгуки</a>
               </li>
               <li>
-                <a class="site-nav__link" href="#">Які результати</a>
+                <a class="site-nav__link" href="#result">Які результати</a>
               </li>
               <li>
-                <a class="site-nav__link" href="#">Хто я</a>
+                <a class="site-nav__link" href="#about-me">Хто я</a>
               </li>
             </ul>
           </nav>
@@ -174,7 +174,7 @@
         </div>
       </section>
 
-      <section class="about-me-section about-me-section--mobile">
+      <section class="about-me-section about-me-section--mobile" id="about-me">
         <div class="container">
           <h2 class="section-title about-me-section__section-title">
             <span>
@@ -316,7 +316,9 @@
             </li>
 
             <li>
-              <h3 class="about-course-descr__title">Які результати?</h3>
+              <h3 class="about-course-descr__title" id="result">
+                Які результати?
+              </h3>
 
               <ul class="about-course-descr__list">
                 <li class="about-course-descr__item">
@@ -351,7 +353,7 @@
         </div>
       </section>
 
-      <section class="tariffs-section">
+      <section class="tariffs-section" id="tariffs">
         <div class="container">
           <h2 class="section-title tariffs-section__section-title">
             <span
@@ -690,7 +692,7 @@
         </div>
       </section>
 
-      <section class="feedback-section">
+      <section class="feedback-section" id="feedback">
         <div class="container">
           <h2 class="section-title feedback-section__section-title">
             <span
@@ -754,12 +756,6 @@
 
     <footer></footer>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./js/index.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
