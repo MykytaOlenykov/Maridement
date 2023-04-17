@@ -13,6 +13,7 @@
   border: none;
 
   overflow: hidden;
+  user-select: none;
 
   &--primary {
     font-weight: 700;
@@ -32,6 +33,12 @@
     text-decoration: none;
 
     border-radius: 89px;
+
+    @media screen and (min-width: $tablet) {
+      display: inline-flex;
+
+      min-width: 417px;
+    }
   }
 
   &::after {
@@ -57,12 +64,6 @@
     opacity: 1;
   }
 
-  &__icon {
-    margin-left: auto;
-
-    fill: currentColor;
-  }
-
   &::before {
     position: absolute;
     top: 0;
@@ -81,5 +82,15 @@
 
   &--active::before {
     opacity: 1;
+  }
+
+  &__icon {
+    margin-left: auto;
+
+    fill: currentColor;
+
+    @media screen and (max-width: calc($mobile - 15px)) {
+      margin-left: 10px;
+    }
   }
 }

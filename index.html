@@ -32,7 +32,7 @@
   <body>
     <header class="page-header">
       <div class="container page-header__container">
-        <a class="logo" href="./index.html" lang="en">Maridement</a>
+        <a class="logo" href="./index.html">Maridement</a>
 
         <button
           class="menu-btn js-open-menu"
@@ -85,51 +85,59 @@
     <main>
       <section class="hero-section">
         <div class="container hero-section__container">
-          <h1 class="hero-section__title">Марія Дементєєва</h1>
+          <div class="hero-section__box">
+            <h1 class="hero-section__title">Марія Дементєєва</h1>
 
-          <p class="hero-section__descr">
-            Авторський курс з фотопозування<br />
-            Модельний скаут | <span lang="en">agemodel</span>
-          </p>
-        </div>
-      </section>
+            <p class="hero-section__descr">
+              Авторський курс з фотопозування<br />
+              Модельний скаут | agemodel
+            </p>
+          </div>
 
-      <section class="info-section">
-        <div class="container">
-          <h2 class="info-section__title">
-            Секрети та інформація для вас, якщо:
-          </h2>
+          <span class="hero-section__label">Фотопозування для всіх</span>
 
-          <ul class="info-list">
-            <li class="info-list__item">
-              <p class="info-list__text">Ви мрієте заробляти на своїй красі?</p>
-            </li>
-            <li class="info-list__item">
-              <p class="info-list__text">
-                Сумніваєтеся, що можливо стати моделлю після 30?
-              </p>
-            </li>
-            <li class="info-list__item">
-              <p class="info-list__text">
-                Хочете вміти робити гарні фотографії для себе?
-              </p>
-            </li>
-            <li class="info-list__item">
-              <p class="info-list__text">
-                Не знаєте як стати, куди подіти руки чи ноги на фото?
-              </p>
-            </li>
-            <li class="info-list__item">
-              <p class="info-list__text">Ви Боїтеся, що не гідні?</p>
-            </li>
-          </ul>
+          <h1 class="hero-section__title hero-section__title--desktop">
+            Maridement
+          </h1>
 
-          <a class="button button--secondary" href="#">
-            Детальніше про курс
-            <svg class="button__icon">
-              <use href="./images/icons.svg#arrow"></use>
-            </svg>
-          </a>
+          <div class="info-container">
+            <h2 class="info-container__title">
+              Секрети та інформація для вас, якщо:
+            </h2>
+
+            <ul class="info-list">
+              <li class="info-list__item">
+                <p class="info-list__text">
+                  Ви мрієте заробляти на своїй красі?
+                </p>
+              </li>
+              <li class="info-list__item">
+                <p class="info-list__text">
+                  Сумніваєтеся, що можливо стати моделлю після 30?
+                </p>
+              </li>
+              <li class="info-list__item">
+                <p class="info-list__text">
+                  Хочете вміти робити гарні фотографії для себе?
+                </p>
+              </li>
+              <li class="info-list__item">
+                <p class="info-list__text">
+                  Не знаєте як стати, куди подіти руки чи ноги на фото?
+                </p>
+              </li>
+              <li class="info-list__item">
+                <p class="info-list__text">Ви Боїтеся, що не гідні?</p>
+              </li>
+            </ul>
+
+            <a class="button button--secondary js-btn-active" href="#">
+              Детальніше про курс
+              <svg class="button__icon">
+                <use href="./images/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -176,10 +184,7 @@
             <li class="list-facts__item">
               <p class="list-facts__text">
                 Коли я почала свій шлях в моделінгу, мені було 38 років. В
-                усьому світі зараз розвивається #<span lang="en"
-                  >agemodeling</span
-                >
-                і досить успішно!
+                усьому світі зараз розвивається # agemodeling і досить успішно!
               </p>
             </li>
             <li class="list-facts__item">
@@ -297,7 +302,7 @@
           </h2>
 
           <ul class="tariffs-list">
-            <li class="tariffs-list__item">
+            <li>
               <div class="tariffs-card tariffs-card--without-descr">
                 <span class="tariffs-card__number">1</span>
 
@@ -366,13 +371,16 @@
                   Вартість: <span>1500 грн</span>
                 </p>
 
-                <button class="button button--primary" type="button">
+                <button
+                  class="button button--primary js-btn-active"
+                  type="button"
+                >
                   Записатися
                 </button>
               </div>
             </li>
 
-            <li class="tariffs-list__item">
+            <li>
               <div class="tariffs-card">
                 <span class="tariffs-card__number">2</span>
 
@@ -439,13 +447,16 @@
                   >Запис по передплаті 100 злотих</span
                 >
 
-                <button class="button button--primary" type="button">
+                <button
+                  class="button button--primary js-btn-active"
+                  type="button"
+                >
                   Записатися
                 </button>
               </div>
             </li>
 
-            <li class="tariffs-list__item">
+            <li>
               <div class="tariffs-card">
                 <span class="tariffs-card__number">3</span>
 
@@ -521,13 +532,16 @@
                   уроками</span
                 >
 
-                <button class="button button--primary" type="button">
+                <button
+                  class="button button--primary js-btn-active"
+                  type="button"
+                >
                   Записатися
                 </button>
               </div>
             </li>
 
-            <li class="tariffs-list__item">
+            <li>
               <div class="tariffs-card">
                 <span class="tariffs-card__number">4</span>
 
@@ -574,7 +588,10 @@
                   >Після оплати потрібен скрін в інстаграм</span
                 >
 
-                <button class="button button--primary" type="button">
+                <button
+                  class="button button--primary js-btn-active"
+                  type="button"
+                >
                   Записатися
                 </button>
               </div>
@@ -649,7 +666,9 @@
             </li>
           </ul>
 
-          <a class="button button--secondary" href="#">Записатися на курс</a>
+          <a class="button button--secondary js-btn-active" href="#"
+            >Записатися на курс</a
+          >
         </div>
       </section>
     </main>

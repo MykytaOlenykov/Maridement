@@ -89,11 +89,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  row-gap: 72px;
   margin-bottom: 155px;
-
-  &__item:not(:last-child) {
-    margin-bottom: 72px;
-  }
 }
 
 .tariffs-card {
