@@ -1,9 +1,16 @@
 import throttle from 'lodash.throttle';
+import debounce from 'lodash.debounce';
 
 const header = document.querySelector('.js-header');
 const body = document.body;
 
-document.addEventListener('scroll', throttle(onToggleFixedHeader, 500));
+document.addEventListener(
+  'scroll',
+  debounce(onToggleFixedHeader, 250, {
+    leading: true,
+    trailing: true,
+  })
+);
 
 function onToggleFixedHeader() {
   if (window.scrollY >= 1) {
