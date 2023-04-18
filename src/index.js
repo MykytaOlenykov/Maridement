@@ -1,4 +1,3 @@
-import './js/IIFE.js';
 import './js/mobileMenu.js';
 import './js/btnAnimation.js';
 import './js/nav.js';
