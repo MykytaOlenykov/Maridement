@@ -1,4 +1,4 @@
-const btnsEl = document.querySelectorAll('.js-btn-active');
+const btnsEl = document.querySelectorAll('.js-btn-modal');
 
 btnsEl.forEach(btn =>
   btn.addEventListener('click', () => {
