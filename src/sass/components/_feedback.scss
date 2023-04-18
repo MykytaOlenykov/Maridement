@@ -9,14 +9,19 @@
   &__icon {
     display: none;
 
-    position: absolute;
-    top: -38px;
-    right: -32px;
-
-    fill: var(--secondary-color);
-
     @media screen and (min-width: $tablet) {
+      position: absolute;
+      top: -38px;
+      right: -32px;
+
       display: block;
+
+      fill: var(--secondary-color);
+    }
+
+    @media screen and (min-width: $laptop) {
+      top: -43px;
+      right: -34px;
     }
   }
 }

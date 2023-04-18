@@ -7,6 +7,10 @@
     padding-bottom: 80px;
   }
 
+  @media screen and (min-width: $laptop) {
+    padding-top: 180px;
+  }
+
   &__section-title {
     position: relative;
 
@@ -32,14 +36,37 @@
       top: -16px;
       right: -30px;
     }
+
+    @media screen and (min-width: $laptop) {
+      top: -27px;
+      right: -38px;
+    }
   }
 }
 
 .about-me-content {
+  &--desktop {
+    display: none;
+  }
+
   @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    &--mobile {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  @media screen and (min-width: $laptop) {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
   }
 
   &__thumb {
@@ -54,6 +81,13 @@
 
       max-width: 400px;
       height: auto;
+    }
+
+    @media screen and (min-width: $laptop) {
+      position: relative;
+
+      border-radius: 5px;
+      overflow: hidden;
     }
   }
 
@@ -77,25 +111,48 @@
 
     @media screen and (min-width: $tablet) {
       font-size: 20px;
+      letter-spacing: 0.04em;
     }
 
-    & > span {
-      position: relative;
+    @media screen and (min-width: $laptop) {
+      margin-bottom: 5px;
 
-      display: inline-block;
+      font-size: 18px;
+      letter-spacing: 0.04em;
+    }
+  }
 
-      &::after {
-        content: '';
+  &__label {
+    display: block;
+    margin-bottom: 29px;
 
-        position: absolute;
-        left: 0;
-        bottom: -16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
 
-        display: block;
-        width: 100%;
-        height: 1px;
+  &__line {
+    position: relative;
 
-        background-color: var(--primary-color);
+    display: inline-block;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      bottom: -16px;
+
+      display: block;
+      width: 100%;
+      height: 1px;
+
+      background-color: var(--primary-color);
+
+      @media screen and (min-width: $laptop) {
+        bottom: -14px;
       }
     }
   }
@@ -114,6 +171,144 @@
 
     @media screen and (min-width: $tablet) {
       font-size: 16px;
+    }
+
+    @media screen and (min-width: $laptop) {
+      // font-size: 14px;
+      font-size: 13px;
+    }
+  }
+
+  &__accent {
+    color: var(--accent-color);
+  }
+}
+
+.about-me-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  &:hover.overlay-first-img,
+  &:focus.overlay-first-img {
+    opacity: 1;
+  }
+
+  &:hover.overlay-second-img,
+  &:focus.overlay-second-img {
+    opacity: 1;
+  }
+
+  &:hover.overlay-third-img,
+  &:focus.overlay-third-img {
+    opacity: 1;
+  }
+}
+
+.overlay-first-img {
+  padding: 48px 40px;
+
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 62.45%,
+    rgba(0, 0, 0, 0.9) 114.8%
+  );
+  opacity: 0;
+
+  transition: opacity var(--duration-overlay) var(--timing-function);
+
+  &__text {
+    font-weight: 600;
+
+    &--first {
+      font-size: 30px;
+      line-height: 1.23;
+      letter-spacing: 0.04em;
+    }
+
+    &--second {
+      font-size: 21px;
+      line-height: 1.24;
+      letter-spacing: 0.04em;
+    }
+  }
+}
+
+.overlay-second-img {
+  padding: 32px 40px 40px 32px;
+
+  backdrop-filter: blur(23px);
+  opacity: 0;
+
+  transition: opacity var(--duration-overlay) var(--timing-function);
+}
+
+.overlay-third-img {
+  display: flex;
+  align-items: end;
+  gap: 23px;
+  padding: 49px 14px;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 50.38%,
+    rgba(0, 0, 0, 0.9) 97.09%
+  );
+  opacity: 0;
+
+  transition: opacity var(--duration-overlay) var(--timing-function);
+
+  &__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.26;
+    text-align: center;
+
+    &:nth-child(1) {
+      position: relative;
+
+      &::after {
+        content: '';
+
+        position: absolute;
+        right: -12px;
+        top: 50%;
+
+        display: block;
+        width: 1px;
+        height: 92px;
+
+        background-color: var(--primary-color);
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__icon-box {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 4px;
+      bottom: -8px;
+
+      width: 67px;
+      height: 14px;
+
+      background-image: url('../images/lines.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/lines@2x.png');
+      }
     }
   }
 }

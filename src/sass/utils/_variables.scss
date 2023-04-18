@@ -2,6 +2,8 @@
   --primary-color: #ffffff;
   --secondary-color: #ffdd2c;
 
+  --accent-color: #feb000;
+
   --primary-bg-color: #111217;
   --secondary-bg-color: #21232e;
   --menu-bg-color: #25262e;
@@ -21,10 +23,10 @@
   );
 
   --duration: 250ms;
+  --duration-overlay: 750ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 $mobile: 375px;
 $tablet: 1024px;
-// $laptop: 1280px;
-$laptop: 1024px;
+$laptop: 1280px;

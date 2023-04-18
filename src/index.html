@@ -57,6 +57,24 @@
           height: 60px;
         }
       }
+      @media screen and (min-width: 1280px) {
+        .about-me-section__icon {
+          width: 54px;
+          height: 76px;
+        }
+        .about-course-section__icon {
+          width: 257px;
+          height: 65px;
+        }
+        .tariffs-section__icon {
+          width: 230px;
+          height: 45px;
+        }
+        .feedback-section__icon {
+          width: 87px;
+          height: 69px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -191,7 +209,7 @@
             </span>
           </h2>
 
-          <div class="about-me-content">
+          <div class="about-me-content about-me-content--mobile">
             <div class="about-me-content__thumb">
               <picture>
                 <source
@@ -232,14 +250,16 @@
 
             <div>
               <h3 class="about-me-content__title">
-                <span>Я експерт з фотопозування</span>
+                <span class="about-me-content__line"
+                  >Я експерт з фотопозування</span
+                >
               </h3>
 
               <ul class="list-facts">
                 <li class="list-facts__item">
                   <p class="list-facts__text">
                     Коли я почала свій шлях в моделінгу, мені було 38 років. В
-                    усьому світі зараз розвивається # agemodeling і досить
+                    усьому світі зараз розвивається #agemodeling і досить
                     успішно!
                   </p>
                 </li>
@@ -272,6 +292,173 @@
               </ul>
             </div>
           </div>
+
+          <ul class="about-me-content about-me-content--desktop">
+            <li>
+              <div class="about-me-content__thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about-me/desktop/img1.webp    1x,
+                      ./images/about-me/desktop/img1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/about-me/desktop/img1.jpg    1x,
+                      ./images/about-me/desktop/img1@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="about-me-content__img"
+                    src="./images/about-me/desktop/img1.jpg"
+                    alt="Фото з фотосесії"
+                  />
+                </picture>
+                <div class="about-me-overlay overlay-first-img">
+                  <p
+                    class="overlay-first-img__text overlay-first-img__text--first"
+                  >
+                    Привіт
+                  </p>
+                  <p
+                    class="overlay-first-img__text overlay-first-img__text--second"
+                  >
+                    Мене звати Марія
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="about-me-content__thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about-me/desktop/img2.webp    1x,
+                      ./images/about-me/desktop/img2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/about-me/desktop/img2.jpg    1x,
+                      ./images/about-me/desktop/img2@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="about-me-content__img"
+                    src="./images/about-me/desktop/img2.jpg"
+                    alt="Фото з фотосесії"
+                  />
+                </picture>
+
+                <div class="about-me-overlay overlay-second-img">
+                  <h3 class="about-me-content__title">
+                    <span>Я експерт з фотопозування</span>
+                  </h3>
+                  <span class="about-me-content__label">
+                    <span class="about-me-content__line"
+                      >Авторський курс | модельний скаут</span
+                    >
+                  </span>
+                  <ul class="list-facts">
+                    <li class="list-facts__item">
+                      <p class="list-facts__text">
+                        Коли я почала свій шлях в моделінгу, мені було
+                        <span class="list-facts__accent">38 років</span>. В
+                        усьому світі зараз розвивається
+                        <span class="list-facts__accent">#agemodeling</span> і
+                        досить успішно!
+                      </p>
+                    </li>
+                    <li class="list-facts__item">
+                      <p class="list-facts__text">
+                        Коли я почала детальніше вникати в суть справи мене
+                        <span class="list-facts__accent">обурило</span> те, що
+                        віковим моделям в основному пропонують ПЛАТИТИ за те,
+                        щоб їх познімали. В найкращому варіанті пропонували
+                        співпрацю на TFP умовах.
+                      </p>
+                    </li>
+                    <li class="list-facts__item">
+                      <p class="list-facts__text">
+                        Також мене дуже обурював той факт що всюди багато
+                        агенцій які забезпечують навчання. Але
+                        <span class="list-facts__accent"
+                          >ніхто не забезпечує потім просування</span
+                        >
+                        моделей. А це, щоб ви розуміли
+                        <span class="list-facts__accent"
+                          >найголовніший фактор</span
+                        >
+                        в моделінгу.
+                      </p>
+                    </li>
+                    <li class="list-facts__item">
+                      <p class="list-facts__text">
+                        Я хотіла це
+                        <span class="list-facts__accent">змінити!</span> Тому
+                        давайте з вами зараз познайомимось ще раз. Мене звати
+                        <span class="list-facts__accent">Марія</span>, окрім
+                        того, що
+                        <span class="list-facts__accent">я agemodel</span> і маю
+                        свій
+                        <span class="list-facts__accent">авторський курс</span>
+                        з фотопозування, я модельний скаут. Наразі не тільки
+                        навчаю дівчат позувати так, щоб подобатись собі на фото,
+                        але й ще
+                        <span class="list-facts__accent"
+                          >допомагаю майбутнім моделям в просуванні</span
+                        >
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="about-me-content__thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about-me/desktop/img3.webp    1x,
+                      ./images/about-me/desktop/img3@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/about-me/desktop/img3.jpg    1x,
+                      ./images/about-me/desktop/img3@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="about-me-content__img"
+                    src="./images/about-me/desktop/img3.jpg"
+                    alt="Фото з уроку"
+                  />
+                </picture>
+
+                <div class="about-me-overlay overlay-third-img">
+                  <p class="overlay-third-img__text">
+                    Я знаю як знаходити кастинги самостійно. Організовую зйомки
+                    від вибору образа до отримання знімків
+                  </p>
+                  <p class="overlay-third-img__text">
+                    Я не просто готую майбутніх моделей, а й допомагаю їм з
+                    <span class="overlay-third-img__icon-box">просуванням</span>
+                    зйомками та кастингами
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -291,75 +478,132 @@
             курс?
           </h2>
 
-          <ul class="about-course-descr">
-            <li>
-              <h3 class="about-course-descr__title">Якщо ви</h3>
+          <ul class="about-course-content">
+            <li class="about-course-content__item">
+              <div class="about-course-content__thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about-course/img1.webp    1x,
+                      ./images/about-course/img1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/about-course/img1.jpg    1x,
+                      ./images/about-course/img1@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="about-course-content__img"
+                    src="./images/about-course/img1.jpg"
+                    alt="Фото з фотосесії"
+                  />
+                </picture>
+              </div>
 
-              <ul class="about-course-descr__list">
-                <li class="about-course-descr__item">
-                  <p class="about-course-descr__text">
-                    Не виходите на фото гарною та вважаєте себе нефотогенічною
-                  </p>
-                </li>
-                <li class="about-course-descr__item">
-                  <p class="about-course-descr__text">
-                    Ви боїтеся, що про вас погано подумають
-                  </p>
-                </li>
-                <li class="about-course-descr__item">
-                  <p class="about-course-descr__text">
-                    Не відчуваєте впевненість перед камерою
-                  </p>
-                </li>
-                <li class="about-course-descr__item">
-                  <p class="about-course-descr__text">
-                    Ви соромитесь фотографуватися
-                  </p>
-                </li>
-                <li class="about-course-descr__item">
-                  <p class="about-course-descr__text">
-                    Потрібні гарні фотографії для продажів через інстаграм
-                  </p>
-                </li>
-              </ul>
+              <div class="about-course-descr">
+                <h3 class="about-course-descr__title">Якщо ви</h3>
+
+                <ul class="about-course-descr__list">
+                  <li class="about-course-descr__item">
+                    <p class="about-course-descr__text">
+                      Не виходите на фото гарною та вважаєте себе нефотогенічною
+                    </p>
+                  </li>
+                  <li class="about-course-descr__item">
+                    <p class="about-course-descr__text">
+                      Ви боїтеся, що про вас погано подумають
+                    </p>
+                  </li>
+                  <li class="about-course-descr__item">
+                    <p class="about-course-descr__text">
+                      Не відчуваєте впевненість перед камерою
+                    </p>
+                  </li>
+                  <li class="about-course-descr__item">
+                    <p class="about-course-descr__text">
+                      Ви соромитесь фотографуватися
+                    </p>
+                  </li>
+                  <li class="about-course-descr__item">
+                    <p class="about-course-descr__text">
+                      Потрібні гарні фотографії для продажів через інстаграм
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </li>
 
-            <li>
-              <h3
-                class="about-course-descr__title about-course-descr__title anchor"
-                id="result"
-              >
-                Які результати?
-              </h3>
+            <li class="about-course-content__item">
+              <div class="about-course-content__thumb">
+                <img
+                  class="about-course-content__icon"
+                  src="./images/img-icon.svg"
+                  alt="Значок"
+                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about-course/img2.webp    1x,
+                      ./images/about-course/img2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/about-course/img2.jpg    1x,
+                      ./images/about-course/img2@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="about-course-content__img"
+                    src="./images/about-course/img2.jpg"
+                    alt="Фото з фотосесії"
+                  />
+                </picture>
+              </div>
 
-              <ul class="about-course-descr__list">
-                <li class="about-course-descr__item">
-                  <p class="about-course-descr__text">
-                    Навчитеся легко позувати не задумуючись про це
-                  </p>
-                </li>
-                <li class="about-course-descr__item">
-                  <p class="about-course-descr__text">
-                    Станете жіночнішою та полюбите своє тіло
-                  </p>
-                </li>
-                <li class="about-course-descr__item">
-                  <p class="about-course-descr__text">
-                    У вас в телефоні з’явиться багато класних, саме ваших фото
-                  </p>
-                </li>
-                <li class="about-course-descr__item">
-                  <p class="about-course-descr__text">
-                    Будете отримувати задоволення від процесу зйомок
-                  </p>
-                </li>
-                <li class="about-course-descr__item">
-                  <p class="about-course-descr__text">
-                    Навчитесь підкреслювати переваги свого тіла, ховаючи
-                    недоліки
-                  </p>
-                </li>
-              </ul>
+              <div class="about-course-descr">
+                <h3
+                  class="about-course-descr__title about-course-descr__title anchor"
+                  id="result"
+                >
+                  Які результати?
+                </h3>
+
+                <ul class="about-course-descr__list">
+                  <li class="about-course-descr__item">
+                    <p class="about-course-descr__text">
+                      Навчитеся легко позувати не задумуючись про це
+                    </p>
+                  </li>
+                  <li class="about-course-descr__item">
+                    <p class="about-course-descr__text">
+                      Станете жіночнішою та полюбите своє тіло
+                    </p>
+                  </li>
+                  <li class="about-course-descr__item">
+                    <p class="about-course-descr__text">
+                      У вас в телефоні з’явиться багато класних, саме ваших фото
+                    </p>
+                  </li>
+                  <li class="about-course-descr__item">
+                    <p class="about-course-descr__text">
+                      Будете отримувати задоволення від процесу зйомок
+                    </p>
+                  </li>
+                  <li class="about-course-descr__item">
+                    <p class="about-course-descr__text">
+                      Навчитесь підкреслювати переваги свого тіла, ховаючи
+                      недоліки
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>

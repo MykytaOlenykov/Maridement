@@ -47,6 +47,11 @@ body {
     padding: 0 40px;
     max-width: $tablet;
   }
+
+  @media screen and (min-width: $laptop) {
+    padding: 0 60px;
+    max-width: $laptop;
+  }
 }
 
 .section-title {
@@ -62,6 +67,13 @@ body {
     line-height: 1.22;
     letter-spacing: 0.04em;
     text-align: start;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.22;
+    letter-spacing: 0.04em;
   }
 }
 

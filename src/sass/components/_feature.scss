@@ -19,14 +19,18 @@
   &__icon {
     display: none;
 
-    position: absolute;
-    top: -32px;
-    right: -36px;
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      top: -32px;
+      right: -36px;
 
-    width: 51px;
+      display: block;
+      width: 51px;
+    }
 
     @media screen and (min-width: $tablet) {
-      display: block;
+      top: -26px;
+      right: -33px;
     }
   }
 
@@ -38,7 +42,6 @@
 
     @media screen and (min-width: $tablet) {
       gap: 50;
-      // justify-content: space-between;
       flex-wrap: nowrap;
       margin-bottom: 0;
     }
@@ -57,6 +60,13 @@
     @media screen and (min-width: $tablet) {
       margin-bottom: 10px;
 
+      text-align: start;
+    }
+
+    @media screen and (min-width: $laptop) {
+      margin-bottom: 10px;
+
+      font-size: 35px;
       text-align: start;
     }
   }

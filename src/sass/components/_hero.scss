@@ -2,7 +2,7 @@
   padding-bottom: 40px;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 60px;
+    padding-bottom: 0;
   }
 
   &__container {
@@ -13,7 +13,10 @@
     }
 
     @media screen and (min-width: $tablet) {
-      background-image: url("../images/hero/hero.png");
+      padding-top: 60px;
+      padding-bottom: 40px;
+
+      background-image: url('../images/hero/mobile/hero.png');
       background-repeat: no-repeat;
       background-position: right center;
       background-size: 375px 496px;
@@ -21,7 +24,24 @@
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url("../images/hero/hero@2x.png");
+        background-image: url('../images/hero/mobile/hero@2x.png');
+      }
+    }
+
+    @media screen and (min-width: $laptop) {
+      padding-top: 115px;
+      padding-bottom: 130px;
+
+      background-image: url('../images/hero/desktop/hero.png');
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 540px auto;
+      // background-size: 710px 783px;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/hero/desktop/hero@2x.png');
       }
     }
   }
@@ -38,7 +58,7 @@
         rgba(0, 0, 0, 0.81) 9.66%,
         rgba(0, 0, 0, 0) 55.73%
       ),
-      url("../images/hero/hero.png");
+      url('../images/hero/mobile/hero.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -51,7 +71,7 @@
           rgba(0, 0, 0, 0.81) 9.66%,
           rgba(0, 0, 0, 0) 55.73%
         ),
-        url("../images/hero/hero@2x.png");
+        url('../images/hero/mobile/hero@2x.png');
     }
 
     @media screen and (min-width: $tablet) {
@@ -83,6 +103,7 @@
 
     @media screen and (min-width: $laptop) {
       font-size: 80px;
+      letter-spacing: 0.04em;
     }
   }
 
@@ -115,7 +136,7 @@
 
   @media screen and (min-width: $tablet) {
     padding-left: 0;
-    padding-right: 40px;
+    padding-right: 0;
     max-width: calc(1024px - 375px - 40px);
   }
 
@@ -148,7 +169,7 @@
       top: 8px;
       left: -16px;
 
-      content: "";
+      content: '';
 
       display: inline-block;
       width: 6px;

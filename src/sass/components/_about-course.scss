@@ -2,6 +2,11 @@
   padding-top: 32px;
   padding-bottom: 45px;
 
+  @media screen and (min-width: $laptop) {
+    padding-top: 96px;
+    padding-bottom: 90px;
+  }
+
   &__section-title {
     position: relative;
 
@@ -23,14 +28,67 @@
     left: 4px;
 
     fill: var(--secondary-color);
+
+    @media screen and (min-width: $laptop) {
+      top: -5px;
+      left: 12px;
+    }
   }
 }
 
-.about-course-descr {
+.about-course-content {
   display: flex;
   flex-direction: column;
   gap: 56px;
 
+  @media screen and (min-width: $laptop) {
+    gap: 50px;
+  }
+
+  &__item {
+    @media screen and (min-width: $laptop) {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__thumb {
+    display: none;
+
+    @media screen and (min-width: $laptop) {
+      position: relative;
+
+      display: block;
+      flex-shrink: 0;
+      width: 505px;
+      height: auto;
+
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: -45px;
+    left: -30px;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+  }
+}
+
+.about-course-descr {
   &__title {
     margin-bottom: 12px;
 
@@ -43,6 +101,10 @@
 
       font-size: 28px;
       line-height: 1.19;
+    }
+
+    @media screen and (min-width: $laptop) {
+      font-size: 32px;
     }
   }
 
@@ -69,6 +131,10 @@
       font-weight: 400;
       font-size: 20px;
       line-height: 1.2;
+    }
+
+    @media screen and (min-width: $laptop) {
+      font-size: 22px;
     }
 
     &::before {
