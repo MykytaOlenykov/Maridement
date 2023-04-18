@@ -83,4 +83,8 @@ body {
   @media screen and (min-width: $tablet) {
     scroll-margin-top: 150px;
   }
+
+  @media screen and (min-width: $laptop) {
+    scroll-margin-top: 160px;
+  }
 }
