@@ -11,6 +11,10 @@
     padding-top: 180px;
   }
 
+  @media screen and (min-width: $desktop) {
+    padding-top: 223px;
+  }
+
   &__section-title {
     position: relative;
 
@@ -131,6 +135,10 @@
     line-height: 1.21;
     text-align: center;
     letter-spacing: 0.04em;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 33px;
+    }
   }
 
   &__line {
@@ -154,6 +162,10 @@
       @media screen and (min-width: $laptop) {
         bottom: -14px;
       }
+
+      @media screen and (min-width: $desktop) {
+        bottom: -16px;
+      }
     }
   }
 }
@@ -174,8 +186,11 @@
     }
 
     @media screen and (min-width: $laptop) {
-      // font-size: 14px;
       font-size: 13px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
     }
   }
 
@@ -244,6 +259,10 @@
   opacity: 0;
 
   transition: opacity var(--duration-overlay) var(--timing-function);
+
+  @media screen and (min-width: $desktop) {
+    padding: 38px 46px 46px 32px;
+  }
 }
 
 .overlay-third-img {
@@ -260,6 +279,10 @@
   opacity: 0;
 
   transition: opacity var(--duration-overlay) var(--timing-function);
+
+  @media screen and (min-width: $desktop) {
+    gap: 35px;
+  }
 
   &__text {
     font-weight: 600;
@@ -283,6 +306,10 @@
 
         background-color: var(--primary-color);
         transform: translateY(-50%);
+
+        @media screen and (min-width: $desktop) {
+          right: -17px;
+        }
       }
     }
   }

@@ -173,7 +173,7 @@
 
   @media screen and (min-width: $laptop) {
     column-gap: 20px;
-    margin-bottom: 246px;
+    margin-bottom: 256px;
   }
 }
 
@@ -188,6 +188,10 @@
 
   @media screen and (min-width: $laptop) {
     max-width: 275px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 295px;
   }
 
   &__number {

@@ -52,6 +52,11 @@ body {
     padding: 0 60px;
     max-width: $laptop;
   }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 100px;
+    max-width: $desktop;
+  }
 }
 
 .section-title {

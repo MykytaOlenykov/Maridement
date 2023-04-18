@@ -1,3 +1,0 @@
-@function getHeaderShadowColor($opacity) {
-  @return rgba(var(--shadow-color), $opacity);
-}
