@@ -14,8 +14,8 @@
   }
 
   @media screen and (min-width: $tablet) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   &__container {
@@ -116,11 +116,18 @@
   }
 
   &__link {
+    display: block;
+
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
     text-transform: uppercase;
     color: var(--primary-color);
     text-decoration: none;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 }
