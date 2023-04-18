@@ -21,11 +21,17 @@ img {
   height: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--primary-color);
 
   background-color: var(--primary-bg-color);
+
+  scroll-behavior: smooth;
 }
 
 .body-lock {
@@ -57,15 +63,12 @@ body {
     letter-spacing: 0.04em;
     text-align: start;
   }
-
-  // @media screen and (min-width: $laptop) {
-  //   font-size: 45px;
-  //   letter-spacing: 0.04em;
-  // }
 }
 
 .anchor {
-  position: absolute;
-  top: -100px;
-  left: 0;
+  scroll-margin-top: 100px;
+
+  @media screen and (min-width: $tablet) {
+    scroll-margin-top: 160px;
+  }
 }
