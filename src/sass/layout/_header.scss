@@ -129,5 +129,9 @@
       padding-top: 20px;
       padding-bottom: 20px;
     }
+
+    &--active {
+      color: var(--secondary-color);
+    }
   }
 }
