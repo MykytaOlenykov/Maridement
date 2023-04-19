@@ -13,11 +13,6 @@
     padding-bottom: 20px;
   }
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &::after {
     content: '';
     position: absolute;
@@ -36,6 +31,11 @@
 
   &--active::after {
     opacity: 1;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
