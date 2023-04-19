@@ -34,17 +34,22 @@
     }
   }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-bottom: 60px;
+  & .button--secondary {
+    font-size: 17px;
+    line-height: 1.24;
+  }
+}
 
-    @media screen and (min-width: $tablet) {
-      gap: 50;
-      flex-wrap: nowrap;
-      margin-bottom: 0;
-    }
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 50;
+    flex-wrap: nowrap;
+    margin-bottom: 0;
   }
 
   &__title {
@@ -81,10 +86,5 @@
     @media screen and (min-width: $tablet) {
       text-align: start;
     }
-  }
-
-  & .button--secondary {
-    font-size: 17px;
-    line-height: 1.24;
   }
 }
