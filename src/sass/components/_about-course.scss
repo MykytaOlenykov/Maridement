@@ -155,6 +155,10 @@
 
       background-color: var(--secondary-color);
       border-radius: 50%;
+
+      @media screen and (min-width: $desktop) {
+        top: 13px;
+      }
     }
   }
 }
