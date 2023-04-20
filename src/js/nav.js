@@ -4,7 +4,7 @@ const mobileMenu = document.querySelector('.js-menu-container');
 navEl.addEventListener('click', e => {
   const targetEl = e.target;
 
-  if (targetEl.classList.contains('js-link')) {
+  if (targetEl.classList.contains('js-site-nav-link')) {
     targetEl.classList.add('site-nav__link--active');
 
     setTimeout(() => {

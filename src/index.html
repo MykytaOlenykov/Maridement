@@ -113,18 +113,24 @@
           <nav class="site-nav js-nav">
             <ul class="site-nav__list">
               <li>
-                <a class="site-nav__link js-link" href="#tariffs">Послуги</a>
+                <a class="site-nav__link js-site-nav-link" href="#tariffs"
+                  >Послуги</a
+                >
               </li>
               <li>
-                <a class="site-nav__link js-link" href="#feedback">Відгуки</a>
+                <a class="site-nav__link js-site-nav-link" href="#feedback"
+                  >Відгуки</a
+                >
               </li>
               <li>
-                <a class="site-nav__link js-link" href="#result"
+                <a class="site-nav__link js-site-nav-link" href="#result"
                   >Які результати</a
                 >
               </li>
               <li>
-                <a class="site-nav__link js-link" href="#about-me">Хто я</a>
+                <a class="site-nav__link js-site-nav-link" href="#about-me"
+                  >Хто я</a
+                >
               </li>
             </ul>
           </nav>
@@ -987,7 +993,54 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="page-footer">
+      <div class="container">
+        <address class="page-address js-address">
+          <ul class="contact-list">
+            <li>
+              <a class="contact-list__link js-contact-link" href="#">
+                <svg
+                  class="contact-list__icon"
+                  aria-label="Instagram"
+                  width="19"
+                  height="19"
+                >
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="contact-list__link js-contact-link" href="#">
+                <svg
+                  class="contact-list__icon"
+                  aria-label="Facebook"
+                  width="10"
+                  height="19"
+                >
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="contact-list__link js-contact-link" href="#">
+                <svg
+                  class="contact-list__icon"
+                  aria-label="TikTok"
+                  width="17"
+                  height="19"
+                >
+                  <use href="./images/icons.svg#tiktok"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <a class="page-address__email js-address-link" href="#"
+            >bw.model.mari@gmail.com</a
+          >
+        </address>
+      </div>
+    </footer>
 
     <script src="./index.js" type="module"></script>
   </body>
