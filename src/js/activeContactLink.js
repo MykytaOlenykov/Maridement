@@ -1,9 +1,9 @@
 const contactList = document.querySelector('.js-contact-list');
 
 contactList.addEventListener('click', e => {
-  const targetEl = e.target;
+  const targetEl = e.target.closest('.js-contact-link');
 
-  if (targetEl.closest('.js-contact-link')) {
+  if (targetEl) {
     targetEl.classList.add('contact-list__link--active');
 
     setTimeout(() => {
