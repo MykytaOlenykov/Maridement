@@ -7,10 +7,6 @@
     <title>Maridement</title>
     <link rel="stylesheet" href="./sass/main.scss" />
     <style>
-      .button__icon {
-        width: 69px;
-        height: 24px;
-      }
       .about-me-section__icon {
         width: 31px;
         height: 42px;
@@ -32,10 +28,6 @@
         height: 38px;
       }
       @media screen and (min-width: 1024px) {
-        .button__icon {
-          width: 86px;
-          height: 28px;
-        }
         .about-me-section__icon {
           width: 40px;
           height: 56px;
@@ -192,10 +184,18 @@
               href="#about-course"
             >
               Детальніше про курс
-              <svg class="button__icon button__icon--small">
+              <svg
+                class="button__icon button__icon--small"
+                width="69"
+                height="24"
+              >
                 <use href="./images/icons.svg#arrow-small"></use>
               </svg>
-              <svg class="button__icon button__icon--big">
+              <svg
+                class="button__icon button__icon--big"
+                width="86"
+                height="28"
+              >
                 <use href="./images/icons.svg#arrow-big"></use>
               </svg>
             </a>
@@ -989,6 +989,173 @@
             href="#tariffs"
             >Записатись на курс</a
           >
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2 class="section-title faq-section__section-title">
+            <span class="faq-section__text"
+              >FAQ
+              <img
+                class="faq-section__icon"
+                src="./images/question-mark.svg"
+                alt="Значок"
+              />
+            </span>
+          </h2>
+
+          <div class="faq-container">
+            <div class="faq-container__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/faq/desktop/img.webp    1x,
+                    ./images/faq/desktop/img@2x.webp 2x
+                  "
+                  media="(min-width: 1024px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/faq/desktop/img.jpg    1x,
+                    ./images/faq/desktop/img@2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/faq/mobile/img.webp    1x,
+                    ./images/faq/mobile/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/faq/mobile/img.jpg    1x,
+                    ./images/faq/mobile/img@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="faq-container__img"
+                  src="./images/faq/mobile/img.jpg"
+                  alt="Фото з фотосесії"
+                />
+              </picture>
+            </div>
+
+            <ul class="faq-list js-faq-list">
+              <li class="faq-list__item js-faq-item">
+                <div class="faq-list__box">
+                  <p class="faq-list__answer">
+                    Так! Купуючи курс він залишається з вами на завжди
+                  </p>
+                  <p class="faq-list__question">
+                    Запис лишиться в мене на завжди?
+                  </p>
+                </div>
+                <button class="faq-list__button js-faq-button" type="button">
+                  <svg
+                    class="faq-list__icon faq-list__icon--small"
+                    width="40"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#faq-arrow-s"></use>
+                  </svg>
+                  <svg
+                    class="faq-list__icon faq-list__icon--big"
+                    width="50"
+                    height="28"
+                  >
+                    <use href="./images/icons.svg#faq-arrow-b"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="faq-list__item js-faq-item">
+                <div class="faq-list__box">
+                  <p class="faq-list__answer">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                  <p class="faq-list__question">
+                    Як часто проходять офлайн МК?
+                  </p>
+                </div>
+
+                <button class="faq-list__button js-faq-button" type="button">
+                  <svg
+                    class="faq-list__icon faq-list__icon--small"
+                    width="40"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#faq-arrow-s"></use>
+                  </svg>
+                  <svg
+                    class="faq-list__icon faq-list__icon--big"
+                    width="50"
+                    height="28"
+                  >
+                    <use href="./images/icons.svg#faq-arrow-b"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="faq-list__item js-faq-item">
+                <div class="faq-list__box">
+                  <p class="faq-list__answer">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                  <p class="faq-list__question">
+                    Курс займає багато часу? Я зайнята людина
+                  </p>
+                </div>
+
+                <button class="faq-list__button js-faq-button" type="button">
+                  <svg
+                    class="faq-list__icon faq-list__icon--small"
+                    width="40"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#faq-arrow-s"></use>
+                  </svg>
+                  <svg
+                    class="faq-list__icon faq-list__icon--big"
+                    width="50"
+                    height="28"
+                  >
+                    <use href="./images/icons.svg#faq-arrow-b"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="faq-list__item js-faq-item">
+                <div class="faq-list__box">
+                  <p class="faq-list__answer">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                  <p class="faq-list__question">
+                    Які є гарантії ваших обіцянок?
+                  </p>
+                </div>
+
+                <button class="faq-list__button js-faq-button" type="button">
+                  <svg
+                    class="faq-list__icon faq-list__icon--small"
+                    width="40"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#faq-arrow-s"></use>
+                  </svg>
+                  <svg
+                    class="faq-list__icon faq-list__icon--big"
+                    width="50"
+                    height="28"
+                  >
+                    <use href="./images/icons.svg#faq-arrow-b"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>

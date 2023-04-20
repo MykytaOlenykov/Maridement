@@ -5,3 +5,4 @@ import './js/nav.js';
 import './js/activeHeader.js';
 import './js/activeContactLink.js';
 import './js/activeEmail.js';
+import './js/toggleFAQ.js';

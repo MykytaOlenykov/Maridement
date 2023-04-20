@@ -77,14 +77,14 @@
     margin-bottom: 38px;
 
     max-width: 335px;
-    height: auto;
+    max-height: 503px;
 
     @media screen and (min-width: $tablet) {
       flex-shrink: 0;
       margin-bottom: 0;
 
       max-width: 400px;
-      height: auto;
+      max-height: 619px;
     }
 
     @media screen and (min-width: $laptop) {
