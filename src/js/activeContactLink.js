@@ -1,4 +1,4 @@
-const contactList = document.querySelector('.js-address');
+const contactList = document.querySelector('.js-contact-list');
 
 contactList.addEventListener('click', e => {
   const targetEl = e.target.closest('.js-contact-link');
