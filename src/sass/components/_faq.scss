@@ -25,6 +25,13 @@
 
     @media screen and (min-width: $tablet) {
       top: -24px;
+      right: -46px;
+
+      width: 46px;
+      height: 71px;
+    }
+
+    @media screen and (min-width: $laptop) {
       right: -57px;
 
       width: 56px;
@@ -51,6 +58,11 @@
 
     @media screen and (min-width: $tablet) {
       margin-bottom: 0;
+      max-width: 450px;
+      max-height: 391px;
+    }
+
+    @media screen and (min-width: $laptop) {
       max-width: 505px;
       max-height: 440px;
     }
@@ -117,8 +129,6 @@
 
   &__answer,
   &__question {
-    display: inline-block;
-
     font-weight: 400;
     font-size: 15px;
     line-height: 1.2;
@@ -127,7 +137,7 @@
     transition: transform var(--duration-faq) var(--timing-function);
 
     @media screen and (min-width: $tablet) {
-      font-size: 26px;
+      font-size: 24px;
       line-height: 1.23;
     }
 
