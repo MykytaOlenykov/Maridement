@@ -10,8 +10,14 @@ faqList.addEventListener('click', e => {
       targetEl.classList.remove('faq-list__button--active');
     }, 100);
 
-    targetEl
-      .closest('.js-faq-item')
-      .classList.toggle('faq-list__item--show-answer');
+    // test feature
+    const targetItemEl = targetEl.closest('.js-faq-item');
+    const activeEl = faqList.querySelector('.faq-list__item--show-answer');
+
+    if (activeEl && targetItemEl !== activeEl) {
+      activeEl.classList.remove('faq-list__item--show-answer');
+    }
+
+    targetItemEl.classList.toggle('faq-list__item--show-answer');
   }
 });
