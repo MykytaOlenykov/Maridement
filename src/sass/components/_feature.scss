@@ -11,41 +11,41 @@
     padding-top: 115px;
   }
 
-  &__section-title {
-    margin-bottom: 40px;
-
-    color: var(--primary-text-color);
-
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 50px;
-    }
-
-    & > span {
-      position: relative;
-    }
-  }
-
-  &__icon {
-    display: none;
-
-    @media screen and (min-width: $tablet) {
-      position: absolute;
-      top: -32px;
-      right: -36px;
-
-      display: block;
-      width: 51px;
-    }
-
-    @media screen and (min-width: $tablet) {
-      top: -26px;
-      right: -33px;
-    }
-  }
-
   & .button--secondary {
     font-size: 17px;
     line-height: 1.24;
+  }
+}
+
+.feature-section__section-title {
+  margin-bottom: 40px;
+
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 50px;
+  }
+
+  & > span {
+    position: relative;
+  }
+}
+
+.feature-section__icon {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: -32px;
+    right: -36px;
+
+    display: block;
+    width: 51px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    top: -26px;
+    right: -33px;
   }
 }
 
@@ -60,40 +60,40 @@
     flex-wrap: nowrap;
     margin-bottom: 0;
   }
+}
 
-  &__title {
-    margin-bottom: 8px;
+.feature-list__title {
+  margin-bottom: 8px;
 
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 1.23;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.23;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--secondary-color);
 
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 10px;
 
-      text-align: start;
-    }
-
-    @media screen and (min-width: $laptop) {
-      margin-bottom: 10px;
-
-      font-size: 35px;
-      text-align: start;
-    }
+    text-align: start;
   }
 
-  &__descr {
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 1.21;
-    text-align: center;
-    color: var(--primary-text-color);
+  @media screen and (min-width: $laptop) {
+    margin-bottom: 10px;
 
-    @media screen and (min-width: $tablet) {
-      text-align: start;
-    }
+    font-size: 35px;
+    text-align: start;
+  }
+}
+
+.feature-list__descr {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: $tablet) {
+    text-align: start;
   }
 }

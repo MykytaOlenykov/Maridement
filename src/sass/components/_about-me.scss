@@ -14,37 +14,37 @@
   @media screen and (min-width: $desktop) {
     padding-top: 223px;
   }
+}
 
-  &__section-title {
-    position: relative;
+.about-me-section__section-title {
+  position: relative;
 
-    margin-bottom: 21px;
+  margin-bottom: 21px;
 
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 55px;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 55px;
+  }
+}
+
+.about-me-section__text {
+  position: relative;
+}
+
+.about-me-section__icon {
+  position: absolute;
+  top: -14px;
+  right: -22.5px;
+
+  fill: var(--secondary-color);
+
+  @media screen and (min-width: $tablet) {
+    top: -16px;
+    right: -30px;
   }
 
-  &__text {
-    position: relative;
-  }
-
-  &__icon {
-    position: absolute;
-    top: -14px;
-    right: -22.5px;
-
-    fill: var(--secondary-color);
-
-    @media screen and (min-width: $tablet) {
-      top: -16px;
-      right: -30px;
-    }
-
-    @media screen and (min-width: $laptop) {
-      top: -27px;
-      right: -38px;
-    }
+  @media screen and (min-width: $laptop) {
+    top: -27px;
+    right: -38px;
   }
 }
 
@@ -234,21 +234,21 @@
   opacity: 0;
 
   transition: opacity var(--duration-overlay) var(--timing-function);
+}
 
-  &__text {
-    font-weight: 600;
+.overlay-first-img__text {
+  font-weight: 600;
 
-    &--first {
-      font-size: 30px;
-      line-height: 1.23;
-      letter-spacing: 0.04em;
-    }
+  &--first {
+    font-size: 30px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+  }
 
-    &--second {
-      font-size: 21px;
-      line-height: 1.24;
-      letter-spacing: 0.04em;
-    }
+  &--second {
+    font-size: 21px;
+    line-height: 1.24;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -283,59 +283,59 @@
   @media screen and (min-width: $desktop) {
     gap: 35px;
   }
+}
 
-  &__text {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.26;
-    text-align: center;
+.overlay-third-img__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.26;
+  text-align: center;
 
-    &:nth-child(1) {
-      position: relative;
-
-      &::after {
-        content: '';
-
-        position: absolute;
-        right: -12px;
-        top: 50%;
-
-        display: block;
-        width: 1px;
-        height: 92px;
-
-        background-color: var(--primary-color);
-        transform: translateY(-50%);
-
-        @media screen and (min-width: $desktop) {
-          right: -17px;
-        }
-      }
-    }
-  }
-
-  &__icon-box {
+  &:nth-child(1) {
     position: relative;
 
     &::after {
       content: '';
+
       position: absolute;
-      left: 4px;
-      bottom: -8px;
+      right: -12px;
+      top: 50%;
 
-      width: 67px;
-      height: 14px;
+      display: block;
+      width: 1px;
+      height: 92px;
 
-      background-image: url('../images/lines.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      background-color: var(--primary-color);
+      transform: translateY(-50%);
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/lines@2x.png');
+      @media screen and (min-width: $desktop) {
+        right: -17px;
       }
+    }
+  }
+}
+
+.overlay-third-img__icon-box {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    bottom: -8px;
+
+    width: 67px;
+    height: 14px;
+
+    background-image: url('../images/lines.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/lines@2x.png');
     }
   }
 }

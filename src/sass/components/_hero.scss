@@ -4,134 +4,134 @@
   @media screen and (min-width: $tablet) {
     padding-bottom: 0;
   }
+}
 
-  &__container {
-    padding-right: 0;
+.hero-section__container {
+  padding-right: 0;
 
-    @media screen and (max-width: calc($tablet - 1px)) {
-      padding-left: 0;
-    }
+  @media screen and (max-width: calc($tablet - 1px)) {
+    padding-left: 0;
+  }
 
-    @media screen and (min-width: $tablet) {
-      padding-top: 60px;
-      padding-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 40px;
 
-      background-image: url('../images/hero/mobile/hero.png');
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-size: 375px 496px;
+    background-image: url('../images/hero/mobile/hero.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 375px 496px;
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/hero/mobile/hero@2x.png');
-      }
-    }
-
-    @media screen and (min-width: $laptop) {
-      padding-top: 115px;
-      padding-bottom: 130px;
-
-      background-image: url('../images/hero/desktop/hero.png');
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-size: 540px auto;
-
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/hero/desktop/hero@2x.png');
-      }
-    }
-
-    @media screen and (min-width: $desktop) {
-      padding-bottom: 150px;
-
-      background-size: 710px 783px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero/mobile/hero@2x.png');
     }
   }
 
-  &__box {
-    margin-bottom: 40px;
-    padding-top: 313.5px;
-    padding-bottom: 112px;
-    padding-left: 20px;
-    padding-right: 20px;
+  @media screen and (min-width: $laptop) {
+    padding-top: 115px;
+    padding-bottom: 130px;
 
+    background-image: url('../images/hero/desktop/hero.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 540px auto;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero/desktop/hero@2x.png');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 150px;
+
+    background-size: 710px 783px;
+  }
+}
+
+.hero-section__box {
+  margin-bottom: 40px;
+  padding-top: 313.5px;
+  padding-bottom: 112px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-image: linear-gradient(
+      17.3deg,
+      rgba(0, 0, 0, 0.81) 9.66%,
+      rgba(0, 0, 0, 0) 55.73%
+    ),
+    url('../images/hero/mobile/hero.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         17.3deg,
         rgba(0, 0, 0, 0.81) 9.66%,
         rgba(0, 0, 0, 0) 55.73%
       ),
-      url('../images/hero/mobile/hero.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          17.3deg,
-          rgba(0, 0, 0, 0.81) 9.66%,
-          rgba(0, 0, 0, 0) 55.73%
-        ),
-        url('../images/hero/mobile/hero@2x.png');
-    }
-
-    @media screen and (min-width: $tablet) {
-      display: none;
-    }
+      url('../images/hero/mobile/hero@2x.png');
   }
 
-  &__title {
-    margin-bottom: 5px;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.hero-section__title {
+  margin-bottom: 5px;
+
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.24;
+
+  &--desktop {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+
+    margin-bottom: 40px;
 
     font-weight: 600;
-    font-size: 21px;
-    line-height: 1.24;
-
-    &--desktop {
-      display: none;
-    }
-
-    @media screen and (min-width: $tablet) {
-      display: block;
-
-      margin-bottom: 40px;
-
-      font-weight: 600;
-      font-size: 60px;
-      line-height: 1.23;
-      letter-spacing: 0.04em;
-    }
-
-    @media screen and (min-width: $laptop) {
-      font-size: 80px;
-      letter-spacing: 0.04em;
-    }
+    font-size: 60px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
   }
 
-  &__descr {
+  @media screen and (min-width: $laptop) {
+    font-size: 80px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.hero-section__descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.hero-section__label {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 28px;
+    line-height: 1.22;
   }
 
-  &__label {
-    display: none;
-
-    @media screen and (min-width: $tablet) {
-      display: block;
-
-      font-weight: 500;
-      font-size: 28px;
-      line-height: 1.22;
-    }
-
-    @media screen and (min-width: $laptop) {
-      font-size: 32px;
-    }
+  @media screen and (min-width: $laptop) {
+    font-size: 32px;
   }
 }
 
@@ -161,31 +161,31 @@
   &__item:not(:last-child) {
     margin-bottom: 18px;
   }
+}
 
-  &__text {
-    position: relative;
+.info-list__text {
+  position: relative;
 
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 1.21;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.21;
 
-    @media screen and (min-width: $desktop) {
-      max-width: 378px;
-    }
+  @media screen and (min-width: $desktop) {
+    max-width: 378px;
+  }
 
-    &::before {
-      position: absolute;
-      top: 8px;
-      left: -16px;
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: -16px;
 
-      content: '';
+    content: '';
 
-      display: inline-block;
-      width: 6px;
-      height: 6px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
 
-      background-color: var(--secondary-color);
-      border-radius: 50%;
-    }
+    background-color: var(--secondary-color);
+    border-radius: 50%;
   }
 }

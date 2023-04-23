@@ -93,28 +93,28 @@
   &--active::before {
     opacity: 1;
   }
+}
 
-  &__icon {
-    margin-left: auto;
+.button__icon {
+  margin-left: auto;
 
-    fill: currentColor;
+  fill: currentColor;
 
-    &--big {
+  &--big {
+    display: none;
+  }
+
+  @media screen and (max-width: calc($mobile - 15px)) {
+    margin-left: 10px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    &--small {
       display: none;
     }
 
-    @media screen and (max-width: calc($mobile - 15px)) {
-      margin-left: 10px;
-    }
-
-    @media screen and (min-width: $tablet) {
-      &--small {
-        display: none;
-      }
-
-      &--big {
-        display: block;
-      }
+    &--big {
+      display: block;
     }
   }
 }
