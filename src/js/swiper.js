@@ -7,6 +7,7 @@ const feedbackSlider = new Swiper('.feedback-slider', {
   breakpoints: {
     1024: {
       spaceBetween: 0,
+      slidesPerView: 1,
     },
     1280: {
       autoHeight: false,
