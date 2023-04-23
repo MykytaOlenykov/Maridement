@@ -1,6 +1,14 @@
 .feedback-section {
   padding-top: 95px;
-  padding-bottom: 95px;
+  padding-bottom: 55px;
+
+  &__section-title {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 55px;
+    }
+  }
 
   &__text {
     position: relative;
@@ -24,4 +32,122 @@
       right: -34px;
     }
   }
+}
+
+.feedback-card {
+  padding: 32px 20px;
+  max-width: 335px;
+
+  background-color: var(--secondary-bg-color);
+  border-radius: 5px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 48px 36px;
+    max-width: 610px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 80px 88px;
+  }
+
+  &__reviewer-name {
+    margin-bottom: 9px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--primary-text-color);
+
+    @media screen and (min-width: $tablet) {
+      font-size: 24px;
+      line-height: 1.21;
+    }
+
+    @media screen and (min-width: $laptop) {
+      font-size: 28px;
+    }
+  }
+
+  &__review {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--primary-text-color);
+
+    @media screen and (min-width: $tablet) {
+      font-size: 18px;
+      line-height: 1.24;
+    }
+
+    @media screen and (min-width: $laptop) {
+      font-size: 21px;
+    }
+  }
+}
+
+.feedback-slider {
+  position: relative;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 60px;
+  }
+}
+
+.feedback-slider__swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--arrow-slider-color);
+
+  cursor: pointer;
+
+  &__icon {
+    fill: currentColor;
+
+    &--big {
+      display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+      &--small {
+        display: none;
+      }
+
+      &--big {
+        display: block;
+      }
+    }
+  }
+}
+
+.swiper-button-prev {
+  left: calc(50% - 69px - 10px);
+
+  @media screen and (min-width: $tablet) {
+    left: calc(50% - 86px - 10px);
+  }
+}
+
+.swiper-button-next {
+  right: calc(50% - 69px - 10px);
+
+  @media screen and (min-width: $tablet) {
+    right: calc(50% - 86px - 10px);
+  }
+}
+
+.swiper-button--active {
+  color: var(--secondary-color);
 }
