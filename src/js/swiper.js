@@ -1,6 +1,6 @@
 import Swiper, { Navigation, Keyboard } from 'swiper';
 
-const feedbackSlider = new Swiper('.feedback-slider', {
+new Swiper('.feedback-slider', {
   autoHeight: true,
   slidesPerView: 1,
   spaceBetween: 30,
@@ -44,8 +44,6 @@ const feedbackSlider = new Swiper('.feedback-slider', {
     onlyInViewport: true,
   },
 });
-
-// centeredSlides: true,
 
 const sliderBtns = document.querySelectorAll('.js-swiper-btn');
 
