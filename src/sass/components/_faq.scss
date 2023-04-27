@@ -17,26 +17,36 @@
 
 .faq-section__text {
   position: relative;
-}
 
-.faq-section__icon {
-  position: absolute;
-  top: -15px;
-  right: -25px;
+  &::after {
+    content: '';
 
-  @media screen and (min-width: $tablet) {
-    top: -24px;
-    right: -46px;
+    position: absolute;
+    top: -15px;
+    right: -25px;
 
-    width: 46px;
-    height: 71px;
-  }
+    width: 30px;
+    height: 47px;
 
-  @media screen and (min-width: $laptop) {
-    right: -57px;
+    background-image: url('../images/question-mark.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-    width: 56px;
-    height: 87px;
+    @media screen and (min-width: $tablet) {
+      top: -24px;
+      right: -46px;
+
+      width: 46px;
+      height: 71px;
+    }
+
+    @media screen and (min-width: $laptop) {
+      right: -57px;
+
+      width: 56px;
+      height: 87px;
+    }
   }
 }
 
@@ -74,6 +84,7 @@
   height: auto;
 
   object-fit: cover;
+  object-position: center;
 }
 
 .faq-list__item {

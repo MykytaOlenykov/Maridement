@@ -28,24 +28,32 @@
 
   & > span {
     position: relative;
-  }
-}
 
-.feature-section__icon {
-  display: none;
+    &::after {
+      content: '';
 
-  @media screen and (min-width: $tablet) {
-    position: absolute;
-    top: -32px;
-    right: -36px;
+      display: none;
 
-    display: block;
-    width: 51px;
-  }
+      @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: -32px;
+        right: -36px;
 
-  @media screen and (min-width: $tablet) {
-    top: -26px;
-    right: -33px;
+        display: block;
+        width: 51px;
+        height: 65px;
+
+        background-image: url('../images/crown.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      @media screen and (min-width: $tablet) {
+        top: -26px;
+        right: -33px;
+      }
+    }
   }
 }
 

@@ -72,13 +72,23 @@
 
     border-radius: 5px;
     overflow: hidden;
-  }
-}
 
-.about-course-content__icon {
-  position: absolute;
-  top: -45px;
-  left: -30px;
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: -12px;
+      left: -18px;
+
+      width: 178px;
+      height: 102px;
+
+      background-image: url('../images/img-icon.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
 }
 
 .about-course-content__img {
@@ -87,6 +97,7 @@
   height: auto;
 
   object-fit: cover;
+  object-position: center;
 }
 
 .about-course-descr__title {
