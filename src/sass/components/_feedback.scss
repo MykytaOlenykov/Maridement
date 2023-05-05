@@ -56,6 +56,7 @@
 .feedback-card {
   padding: 32px 20px;
   max-width: 335px;
+  height: 191px;
 
   background-color: var(--secondary-bg-color);
   border-radius: 5px;
@@ -63,17 +64,18 @@
   user-select: none;
 
   @media screen and (min-width: $tablet) {
-    padding: 48px 36px;
-    max-width: 610px;
-  }
-
-  @media screen and (min-width: $laptop) {
     padding: 80px 88px;
+    max-width: 610px;
+    height: 348px;
   }
 
   @media screen and (min-width: $desktop) {
     max-width: 100%;
   }
+}
+
+.swiper-slide-active > .feedback-card {
+  cursor: pointer;
 }
 
 .feedback-card__reviewer-name {
@@ -85,28 +87,27 @@
   color: var(--primary-text-color);
 
   @media screen and (min-width: $tablet) {
-    font-size: 24px;
-    line-height: 1.21;
-  }
-
-  @media screen and (min-width: $laptop) {
     font-size: 28px;
+    line-height: 1.21;
   }
 }
 
 .feedback-card__review {
+  display: -webkit-box;
+  width: 100%;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.21;
   color: var(--primary-text-color);
 
-  @media screen and (min-width: $tablet) {
-    font-size: 18px;
-    line-height: 1.24;
-  }
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 
-  @media screen and (min-width: $laptop) {
+  @media screen and (min-width: $tablet) {
     font-size: 21px;
+    line-height: 1.24;
   }
 }
 
@@ -131,6 +132,8 @@
       opacity: 1;
 
       transition: opacity var(--duration-slider) var(--timing-function);
+
+      pointer-events: none;
     }
   }
 
@@ -146,11 +149,6 @@
   .swiper-slide-active.feedback-slider__swiper-slide::after {
     opacity: 0;
   }
-}
-
-.feedback-slider__swiper-wrapper {
-  display: flex;
-  align-items: center;
 }
 
 .feedback-slider {

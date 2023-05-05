@@ -25,6 +25,7 @@
   );
 
   --duration: 250ms;
+  --duration-modal: 250ms;
   --duration-shadow: 500ms;
   --duration-overlay: 750ms;
   --duration-faq: 750ms;
@@ -36,3 +37,5 @@ $mobile: 375px;
 $tablet: 1024px;
 $laptop: 1280px;
 $desktop: 1440px;
+$height-s: 480px;
+$height-b: 680px;

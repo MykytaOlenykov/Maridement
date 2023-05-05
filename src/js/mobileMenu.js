@@ -18,7 +18,13 @@ function onCloseMenu() {
 }
 
 window.matchMedia('(min-width: 1024px)').addEventListener('change', e => {
-  if (!e.matches) return;
+  if (!e.matches) {
+    return;
+  }
+
+  if (!mobileMenu.classList.contains('menu-container--is-open')) {
+    return;
+  }
 
   mobileMenu.classList.remove('menu-container--is-open');
   openMenuBtn.setAttribute('aria-expanded', false);
