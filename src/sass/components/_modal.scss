@@ -11,7 +11,7 @@
 
   visibility: visible;
   opacity: 1;
-  transition: opacity var(--duration-modal) var(--timing-function);
+  transition: all var(--duration-modal) var(--timing-function);
 
   overflow-y: auto;
 
