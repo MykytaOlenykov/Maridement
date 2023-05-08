@@ -1,15 +1,19 @@
 const navEl = document.querySelector('.js-nav');
 const mobileMenu = document.querySelector('.js-menu-container');
 
-navEl.addEventListener('click', e => {
+navEl.addEventListener('mousedown', e => {
   const targetEl = e.target;
 
   if (targetEl.classList.contains('js-site-nav-link')) {
     targetEl.classList.add('site-nav__link--active');
+  }
+});
 
-    setTimeout(() => {
-      targetEl.classList.remove('site-nav__link--active');
-    }, 100);
+navEl.addEventListener('mouseup', e => {
+  const targetEl = e.target;
+
+  if (targetEl.classList.contains('js-site-nav-link')) {
+    targetEl.classList.remove('site-nav__link--active');
 
     document.body.classList.remove('body-lock');
 

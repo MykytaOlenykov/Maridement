@@ -1,11 +1,10 @@
 const btnsEl = document.querySelectorAll('.js-btn-active');
 
-btnsEl.forEach(btn =>
-  btn.addEventListener('click', () => {
+btnsEl.forEach(btn => {
+  btn.addEventListener('mousedown', () => {
     btn.classList.add('button--active');
-
-    setTimeout(() => {
-      btn.classList.remove('button--active');
-    }, 100);
-  })
-);
+  });
+  btn.addEventListener('mouseup', () => {
+    btn.classList.remove('button--active');
+  });
+});

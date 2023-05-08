@@ -1,6 +1,6 @@
 const faqList = document.querySelector('.js-faq-list');
 
-faqList.addEventListener('click', e => {
+faqList.addEventListener('mousedown', e => {
   const btnEl = e.target.closest('.js-faq-button');
 
   if (!btnEl) {
@@ -8,12 +8,17 @@ faqList.addEventListener('click', e => {
   }
 
   btnEl.classList.add('faq-list__button--active');
+});
 
-  setTimeout(() => {
-    btnEl.classList.remove('faq-list__button--active');
-  }, 100);
+faqList.addEventListener('mouseup', e => {
+  const btnEl = e.target.closest('.js-faq-button');
 
-  // test feature
+  if (!btnEl) {
+    return;
+  }
+
+  btnEl.classList.remove('faq-list__button--active');
+
   const itemEl = btnEl.closest('.js-faq-item');
   const activeEl = faqList.querySelector('.faq-list__item--show-answer');
 

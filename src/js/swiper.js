@@ -43,11 +43,10 @@ new Swiper('.feedback-slider', {
 const sliderBtns = document.querySelectorAll('.js-swiper-btn');
 
 sliderBtns.forEach(sliderBtn => {
-  sliderBtn.addEventListener('click', () => {
+  sliderBtn.addEventListener('mousedown', () => {
     sliderBtn.classList.add('swiper-button--active');
-
-    setTimeout(() => {
-      sliderBtn.classList.remove('swiper-button--active');
-    }, 100);
+  });
+  sliderBtn.addEventListener('mouseup', () => {
+    sliderBtn.classList.remove('swiper-button--active');
   });
 });
