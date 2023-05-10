@@ -14,7 +14,13 @@ navEl.addEventListener('mouseup', e => {
 
   if (targetEl.classList.contains('js-site-nav-link')) {
     targetEl.classList.remove('site-nav__link--active');
+  }
+});
 
+navEl.addEventListener('click', e => {
+  const targetEl = e.target;
+
+  if (targetEl.classList.contains('js-site-nav-link')) {
     document.body.classList.remove('body-lock');
 
     if (mobileMenu.classList.contains('menu-container--is-open')) {

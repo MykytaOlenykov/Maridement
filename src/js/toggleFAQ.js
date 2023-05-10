@@ -18,6 +18,14 @@ faqList.addEventListener('mouseup', e => {
   }
 
   btnEl.classList.remove('faq-list__button--active');
+});
+
+faqList.addEventListener('click', e => {
+  const btnEl = e.target.closest('.js-faq-button');
+
+  if (!btnEl) {
+    return;
+  }
 
   const itemEl = btnEl.closest('.js-faq-item');
   const activeEl = faqList.querySelector('.faq-list__item--show-answer');
