@@ -32,6 +32,8 @@ body {
   background-color: var(--primary-bg-color);
 
   scroll-behavior: smooth;
+
+  overflow-x: hidden;
 }
 
 .body-lock {
