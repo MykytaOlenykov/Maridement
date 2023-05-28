@@ -1,4 +1,11 @@
+import { faqData } from '../../../db/faq';
+import { createMarkup } from './faqMarkup';
+
 const faqList = document.querySelector('.js-faq-list');
+
+const markup = createMarkup(faqData);
+
+faqList.innerHTML = markup;
 
 faqList.addEventListener('mousedown', e => {
   const btnEl = e.target.closest('.js-faq-button');

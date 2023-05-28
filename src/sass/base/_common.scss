@@ -44,6 +44,7 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   max-width: $mobile;
+  min-width: 310px;
 
   @media screen and (min-width: $tablet) {
     padding: 0 40px;

@@ -6,4 +6,5 @@ import './js/activeBtn.js';
 import './js/nav.js';
 import './js/activeHeader.js';
 import './js/activeContactLink.js';
-import './js/toggleFAQ.js';
+
+import './js/components/faq/index.js';
